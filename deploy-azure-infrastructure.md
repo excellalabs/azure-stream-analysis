@@ -9,7 +9,7 @@ There are several free options to get you started.
 
 ### 2. Deploy Azure Resource Management Template
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fgithub.com%2Fexcellaco%2Fazure-sentiment-analysis%2Fblob%2Fmaster%2Fdeploy%2Fazure-stream-analytics-template.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fgithub.com%2Fexcellalabs%2Fazure-stream-analysis%2Fblob%2Fmaster%2Fdeploy%2Fazure-stream-analytics-template.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/> 
 </a>
 
