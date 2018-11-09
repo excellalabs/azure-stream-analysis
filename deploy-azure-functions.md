@@ -5,7 +5,7 @@ Please refer to the following guide to publish the function apps part of this re
 ### Publish Azure Functions
 To publish the required function apps in this repo, please follow the following steps:
 
-1. Open the [function app solution](https://github.com/excellaco/azure-sentiment-analysis/blob/master/src/azure-functions/Excella.Twitter.AzureFunction.sln) in Visual Studio
+1. Open the [function app solution](https://github.com/excellalabs/azure-stream-analysis/blob/master/src/azure-functions/Excella.Twitter.AzureFunction.sln) in Visual Studio
 2. Right-click on the solution in the solution explorer 
 3. Select Publish
 4. Select Publish to existing
