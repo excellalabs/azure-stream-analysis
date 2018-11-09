@@ -16,7 +16,5 @@ There are several free options to get you started.
 ### 3. Enter valid parameter values
 Select to create a new resource group, or utilize an existing.
 
-For each parameter, enter a globally unique name for each cloud service. A tip to achieve a globally unique name is to use the following format: {name}-{generated GUID}
-
 ### 4. Deploy
 Select to agree with terms and conditions and click "Purchase" to trigger the deployment.
