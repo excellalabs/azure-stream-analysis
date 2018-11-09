@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/excellaco/azure-stream-analysis-pipelines/_apis/build/status/excellaco.azure-stream-analysis)](https://dev.azure.com/excellaco/azure-stream-analysis-pipelines/_build/latest?definitionId=1)
+[![Build Status](https://dev.azure.com/excellaco/azure-stream-analysis-pipelines/_apis/build/status/excellalabs.azure-stream-analysis)](https://dev.azure.com/excellaco/azure-stream-analysis-pipelines/_build/latest?definitionId=2)
 
 # Real Time Data Streaming of Raspberry PI and Twitter Data
 
