@@ -8,14 +8,14 @@ To connect to Twitter:
 3. For your application, locate the Account Secret and Account Token to be used for connecting to the API
 
 ### Azure
-Please refer to the [following guide](https://github.com/excellaco/azure-sentiment-analysis/blob/master/deploy-azure-infrastructure.md) to deploy the Azure Infrastructure
+Please refer to the [following guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/deploy-azure-infrastructure.md) to deploy the Azure Infrastructure
 
 #### Azure Functions
-Please refer to the [following guide](https://github.com/excellaco/azure-sentiment-analysis/blob/master/deploy-azure-functions.md) to deploy the required function apps used in this sample.
+Please refer to the [following guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/deploy-azure-functions.md) to deploy the required function apps used in this sample.
 
 #### Azure WebJob
 The Twitter feeds are consumed by an Azure WebJob that retains the connection to the Twitter API. To deploy the WebJob, please:
-1. Open the WebJob [solution](https://github.com/excellaco/azure-sentiment-analysis/tree/master/src/webjob) in VS Code or Visual Studio.
+1. Open the WebJob [solution](https://github.com/excellalabs/azure-stream-analysis/tree/master/src/webjob) in VS Code or Visual Studio.
 2. Right click on the WebJob project and select to deploy as a WebJob
 3. Select to publish to exiting
 4. Log in with your Azure credentials
@@ -42,10 +42,10 @@ Once deployed, navigate to the WebJob in the Azure portal and make sure to updat
 | ApplicationInsight_InstrumentKey | Application Insight instrumentation key, located in the Application Insight blade in Azure |
 
 ### Azure Stream Analytics SQL
-Once the Azure Infrastructure has been deployed, open the Twitter Stream Analytics Job and paste in the Azure Stream Analytics query from [here](https://github.com/excellaco/azure-sentiment-analysis/blob/master/src/azure-stream-analytics/twitter-streaming-job)
+Once the Azure Infrastructure has been deployed, open the Twitter Stream Analytics Job and paste in the Azure Stream Analytics query from [here](https://github.com/excellalabs/azure-stream-analysis/blob/master/src/azure-stream-analytics/twitter-streaming-job)
 
 ### Power BI
-Please refer to the [following guide](https://github.com/excellaco/azure-sentiment-analysis/blob/master/setting-up-power-bi.md) setting a Power BI dashboard and a streaming dataset
+Please refer to the [following guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/setting-up-power-bi.md) setting a Power BI dashboard and a streaming dataset
 
 ### Run
 To start streaming Twitter feeds, please:
