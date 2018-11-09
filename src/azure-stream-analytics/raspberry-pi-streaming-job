@@ -1,0 +1,19 @@
+/* ************ Raspberry PI **************** */
+
+-- Power BI
+SELECT   
+    event.DeviceId,
+    System.TimeStamp AS EventTime,  
+    event.SensorReadings.*,
+    ref.deviceName
+INTO "raspberry-pi-power-bi-output"
+FROM "raspberry-pi-eh-input" as event  
+JOIN "raspberrypi-reference-data-input" ref ON ref.devideId = event.DeviceId
+
+-- Azure Function output
+SELECT   
+   System.TimeStamp as OutTime,
+    event.SensorReadings.Distance
+INTO "raspberry-pi-motion-function-output"
+FROM "raspberry-pi-eh-input" as event  
+WHERE event.SensorReadings.Distance < LAG(event.SensorReadings.Distance) OVER (PARTITION BY event.DeviceId LIMIT DURATION(second, 10))

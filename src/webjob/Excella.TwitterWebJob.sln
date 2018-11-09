@@ -1,0 +1,54 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excella.TwitterWebJob", "Excella.TwitterWebJob\Excella.TwitterWebJob.csproj", "{99FE5EDB-E9A5-4584-94B0-6F7E69EF0621}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C4A4BC0A-FC43-4D75-BA76-05186E68C5A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excella.TwitterClient.Core", "Excella.TwitterClient.Core\Excella.TwitterClient.Core.csproj", "{91143880-717B-451B-AEF2-98AB27FA204C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{3EEA9FD7-6EFA-4457-930B-3AAD1A2FE7EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excella.TwitterClient.Business", "Excella.TwitterClient.Business\Excella.TwitterClient.Business.csproj", "{D086145C-53B1-4196-A795-965DF0082BD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4753F4E6-66F8-4459-AEF7-B33716F2FDAE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excella.TwitterClient.Business.Tests", "Tests\Excella.TwitterClient.Business.Tests\Excella.TwitterClient.Business.Tests.csproj", "{6A06AF14-867C-409E-9138-D8788D8E94B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99FE5EDB-E9A5-4584-94B0-6F7E69EF0621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99FE5EDB-E9A5-4584-94B0-6F7E69EF0621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99FE5EDB-E9A5-4584-94B0-6F7E69EF0621}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99FE5EDB-E9A5-4584-94B0-6F7E69EF0621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91143880-717B-451B-AEF2-98AB27FA204C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91143880-717B-451B-AEF2-98AB27FA204C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91143880-717B-451B-AEF2-98AB27FA204C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91143880-717B-451B-AEF2-98AB27FA204C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D086145C-53B1-4196-A795-965DF0082BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D086145C-53B1-4196-A795-965DF0082BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D086145C-53B1-4196-A795-965DF0082BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D086145C-53B1-4196-A795-965DF0082BD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A06AF14-867C-409E-9138-D8788D8E94B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A06AF14-867C-409E-9138-D8788D8E94B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A06AF14-867C-409E-9138-D8788D8E94B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A06AF14-867C-409E-9138-D8788D8E94B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{91143880-717B-451B-AEF2-98AB27FA204C} = {C4A4BC0A-FC43-4D75-BA76-05186E68C5A3}
+		{D086145C-53B1-4196-A795-965DF0082BD5} = {3EEA9FD7-6EFA-4457-930B-3AAD1A2FE7EC}
+		{6A06AF14-867C-409E-9138-D8788D8E94B2} = {4753F4E6-66F8-4459-AEF7-B33716F2FDAE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F86670A0-7336-4F4F-A8C8-22DFA4D07835}
+	EndGlobalSection
+EndGlobal
