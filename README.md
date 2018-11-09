@@ -30,19 +30,19 @@ This repo demonstrates the ability to stream sensor data from a Raspberry PI uti
 ![Solution Architecture](https://www.lucidchart.com/publicSegments/view/69aabaa9-865d-42e1-b175-96a9639cc2a9/image.png)
 
 ### Streaming of Raspberry PI Data
-![Solution Architecture Streaming of Raspberry PI data](https://github.com/excellaco/azure-sentiment-analysis/blob/master/Raspberry%20PI%20Stream.png)
+![Solution Architecture Streaming of Raspberry PI data](https://github.com/excellalabs/azure-stream-analysis/blob/master/Raspberry%20PI%20Stream.png)
 
 ## How to get started
 
 ### Sentiment Analysis of a Twitter Feed
-Please follow the following [guide](https://github.com/excellaco/azure-sentiment-analysis/blob/master/deploy-and-run-semantic-analysis.md) to setup and run semantic analysis
+Please follow the following [guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/deploy-and-run-semantic-analysis.md) to setup and run semantic analysis
 
 ### Streaming of Raspberry PI Data
-Please follow the following [guide](https://github.com/excellaco/azure-sentiment-analysis/blob/master/deploy-and-run-raspberrypi-stream.md)
+Please follow the following [guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/deploy-and-run-raspberrypi-stream.md)
 to setup and run Raspberry PI sensor streaming
 
 ## Contribute
 See anything you want to improve? Do you want to build out the existing code base? Don't heistate to open a PR!
-Please read our [contributing guidelines](https://github.com/excellaco/azure-sentiment-analysis/blob/master/contributing.md)
+Please read our [contributing guidelines](https://github.com/excellalabs/azure-stream-analysis/blob/master/contributing.md)
 
 
