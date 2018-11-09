@@ -6,17 +6,17 @@
 - [GrovePi](https://www.dexterindustries.com/grovepi/)
 
 ### Azure
-Please refer to the [following guide](https://github.com/excellaco/azure-sentiment-analysis/blob/master/deploy-azure-infrastructure.md) to deploy the Azure Infrastructure.
+Please refer to the [following guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/deploy-azure-infrastructure.md) to deploy the Azure Infrastructure.
 
 #### Azure Functions
-Please refer to [following guide](https://github.com/excellaco/azure-sentiment-analysis/blob/master/deploy-azure-functions.md) to deploy the required function apps used in this sample.
+Please refer to [following guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/deploy-azure-functions.md) to deploy the required function apps used in this sample.
 
 #### Azure Stream Analytics SQL
-Once the Azure Infrastructure has been deployed, open the Twitter Stream Analytics Job and paste in the Azure Stream Analytics query from [here](https://github.com/excellaco/azure-sentiment-analysis/blob/master/src/azure-stream-analytics/raspberry-pi-streaming-job)
+Once the Azure Infrastructure has been deployed, open the Twitter Stream Analytics Job and paste in the Azure Stream Analytics query from [here](https://github.com/excellalabs/azure-stream-analysis/blob/master/src/azure-stream-analytics/raspberry-pi-streaming-job)
 
 
 #### Reference data 
-The sensor data stream from your Raspberry Pi will contain individual data points as well as the unique device id for your device. To be able to enrich your stream with additional information, e.g. a friendly device name, please navigate to your storage account and to the referencedata blob container. In this container, please copy in an updated version of the [reference_data.json](https://github.com/excellaco/azure-sentiment-analysis/blob/master/src/azure-stream-analytics/reference_data.json)
+The sensor data stream from your Raspberry Pi will contain individual data points as well as the unique device id for your device. To be able to enrich your stream with additional information, e.g. a friendly device name, please navigate to your storage account and to the referencedata blob container. In this container, please copy in an updated version of the [reference_data.json](https://github.com/excellalabs/azure-stream-analysis/blob/master/src/azure-stream-analytics/reference_data.json)
 
 ```
    [ 
@@ -66,10 +66,10 @@ $ pip install azure
 4. Connect the light sensor to analog port A1
 5. Connect the ultra-sonic range sensor to  digital port D4
 
-![Raspberry PI](https://github.com/excellaco/azure-sentiment-analysis/blob/master/raspberry-pi-setup.jpg)
+![Raspberry PI](https://github.com/excellalabs/azure-stream-analysis/blob/master/raspberry-pi-setup.jpg)
 
 #### Sends sensor data to Azure
-Download [stream_raspberrypi_sensors.py](https://github.com/excellaco/azure-sentiment-analysis/blob/master/src/raspberry-pi/stream_raspberrypi_sensors_to_azure.py)
+Download [stream_raspberrypi_sensors.py](https://github.com/excellalabs/azure-stream-analysis/blob/master/src/raspberry-pi/stream_raspberrypi_sensors_to_azure.py)
 
 Update the script with configuration data for your Azure Event Hub.
 In a command shell, navigate to the directory of the script and run
@@ -79,4 +79,4 @@ In a command shell, navigate to the directory of the script and run
 ```
 
 ### Power BI
-Please refer to the [following guide](https://github.com/excellaco/azure-sentiment-analysis/blob/master/setting-up-power-bi.md) setting a Power BI dashboard and a streaming dataset
+Please refer to the [following guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/setting-up-power-bi.md) setting a Power BI dashboard and a streaming dataset
