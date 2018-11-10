@@ -22,3 +22,7 @@ To create a dashboard utilizing a streaming dataset, follow the below steps
 4. In your dashboard, select to Add a new tile. For the tile type, select "Custom Streaming Data"
 5. Select what the tile should represent 
 
+### Examples
+
+#### Twitter Power BI Dashboard
+![Twitter Power BI Dashboard](https://github.com/excellalabs/azure-stream-analysis/blob/master/twitter-powerbi.PNG)
