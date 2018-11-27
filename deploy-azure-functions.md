@@ -1,4 +1,4 @@
-
+ 
 ## How to get started
 Please refer to the following guide to publish the function apps part of this repo.
 
@@ -17,16 +17,16 @@ To publish the required function apps in this repo, please follow the following 
 #### Configure Application Settings
 The following configuration values may need to be configured for the Azur Functions to work correctly
 
-| Key                        | Value                                                      |
-| ---------------------------| ---------------------------------------------------------- |
-| Send_From                  | E-mail that Azure Functions will use as sending e-mail     |
-| Send_To                    | E-mail that the Azure Functions will use to send notifications to |
-| SendGrid_API_Key           | SendGrid API key to be used to send e-mails |
-| Twilio_Account_Id          | Twilio Account Id |
-| Twilio_Auth_Token          | Twilio Auth Token |
-| Twilio_Caller_PhoneNumber  | Phone number that Twilio will call from |
-| Twilio_To_PhoneNumber      | Phone number that Twilio will call |
-| Twilio_Resource_Url        | Twilio resource URI for TwiML resources (e.g. configure text-to-speech) |
+| Key                        | Value                                                      | Required for |
+| ---------------------------| ---------------------------------------------------------- | ------------ |
+| Send_From                  | E-mail that Azure Functions will use as sending e-mail     | AnomalyDetectionFunction, ThresHoldFunction |
+| Send_To                    | E-mail that the Azure Functions will use to send notifications to | AnomalyDetectionFunction, ThresHoldFunction |
+| SendGrid_API_Key           | SendGrid API key to be used to send e-mails |  AnomalyDetectionFunction, ThresHoldFunction |
+| Twilio_Account_Id          | Twilio Account Id | MotionDetectionFunction |
+| Twilio_Auth_Token          | Twilio Auth Token | MotionDetectionFunction | 
+| Twilio_Caller_PhoneNumber  | Phone number that Twilio will call from | MotionDetectionFunction |
+| Twilio_To_PhoneNumber      | Phone number that Twilio will call | MotionDetectionFunction |
+| Twilio_Resource_Url        | Twilio resource URI for TwiML resources (e.g. configure text-to-speech) | MotionDetectionFunction |
   
 #### Azure Stream Analytics
 The Function Appare not part of the ARM template, as they require the Azure Functions to be published first. After the ARM template has been deployed, and the Azure Functions have been published, please add Azure Function output for the following outputs:
@@ -41,6 +41,16 @@ Raspberry PI Analytics Job
 ### Twilio
 Twilo is used to make a phone call as part of the MotionDetectionFunction.
 To create a Twilio account to get access to the necessary configuration parameters, please visit https://www.twilio.com/
+
+You'll need to create a [TwiML Bin](https://www.twilio.com/blog/2017/11/twiml-bins-a-serverless-and-codeless-way-to-try-twilio.html) in order to use text-to-speech. Once created, please copy-and-paste the following resource
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Say voice="man">Someone has entered your home, please return immediately!</Say>
+  <Play>https://demo.twilio.com/docs/classic.mp3</Play>
+</Response>
+```
 
 ### Sendgrid
 SendGrid is used to send e-mail notifications by the ThresholdFunction and the AnomalyDetectionFunction.
