@@ -78,5 +78,7 @@ In a command shell, navigate to the directory of the script and run
   $ sudo python stream_raspberrypi_sensors_to_azure.py
 ```
 
+No Raspberry Pi or GrovePi at hand? No worries, follow the following guide to simulate an [event stream](https://github.com/excellalabs/azure-stream-analysis/blob/master/simulate-iot-data.md)
+
 ### Power BI
 Please refer to the [following guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/setting-up-power-bi.md) setting a Power BI dashboard and a streaming dataset
