@@ -1,7 +1,8 @@
 ﻿using Excella.TwitterClient.Business.EventHub;
 using IoTSimulation.Models;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Configuration;
 using System;
+using System.IO;
 using System.Threading;
 
 namespace IoTSimulation
@@ -10,8 +11,15 @@ namespace IoTSimulation
     {
         static void Main(string[] args)
         {
+            var configurationRoot = new ConfigurationBuilder()
+                                .SetBasePath(Directory.GetCurrentDirectory())
+                                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                                .Build();
+
+            var appSettings = configurationRoot.Get<AppSettings>();
+
             Console.WriteLine("Starting IoT simulation");
-            var eventHubService = new EventHubService();
+            var eventHubService = new EventHubService(appSettings.EventHubSettings);
 
             while (true)
             {
