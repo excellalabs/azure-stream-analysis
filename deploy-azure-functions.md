@@ -38,6 +38,8 @@ Twitter Stream Analytics Job
 Raspberry PI Analytics Job
 - MotionDetectionFunction
 
+*Note*: Azure Stream Analytics currently require the Azure Functions to support TLS 1.0 in order to function correctly. Make sure to update your Azure Functions platforms settings to allow this to work.
+
 ### Twilio
 Twilo is used to make a phone call as part of the MotionDetectionFunction.
 To create a Twilio account to get access to the necessary configuration parameters, please visit https://www.twilio.com/
