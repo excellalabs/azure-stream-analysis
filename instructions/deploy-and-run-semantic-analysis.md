@@ -25,6 +25,7 @@ Please ensure you have the following
 #### 3. Deploy
 Select to agree with terms and conditions and click "Purchase" to trigger the deployment.
 
+
 **Note: The deployment will indicate failure but this is just because it was unable to authenticate the Power BI connection which you will later have to authorize**
 
 #### Authenticate accounts
@@ -48,7 +49,7 @@ The ARM template will succesfully set up the required infrastructure but will re
 - Navigate back to the Logic App overview page
 - Click "Enable" to enable your trigger
 
-**Note that you are able to change which keyword to subscribe to in the first twitter connection step**
+You are able to change which keyword to subscribe to in the first twitter connection step
 
 ### Power BI
 Please refer to the [following guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/setting-up-power-bi.md) setting a Power BI dashboard and a streaming dataset
