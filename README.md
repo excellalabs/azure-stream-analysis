@@ -27,7 +27,7 @@ This repo demonstrates the ability to stream Twitter data based on keywords or s
 ![Solution Architecture](https://github.com/excellalabs/azure-stream-analysis/blob/master/instructions/img/Solution%20Architecture%20-%20Twitter.png)
 
 #### How to get started
-Please follow the following [guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/instructions/deploy-and-run-semantic-analysis.md) to setup and run semantic analysis
+Please follow the following [guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/instructions/deploy-and-run-semantic-analysis.md) to set up the infrastructure with Azure Resource Management Templates and run semantic analysis on Twitter Feeds
 
 ### Streaming of Raspberry Pi IoT Data
 This repo demonstrates the ability to stream IoT sensor data from a Raspberry PI to the cloud, utilizing an EventHub, a Stream Analytics jon, an Azure Service Bus and and an Azure Logic App. The sensor data can be viewed in a Power BI dashboard, but there is also built in functionality to demonstrate how easy it is to set up your own burglar alarm. Any motion detected by the Raspberry PI's sensors will put a message in a service bus queue that will be picked up by an Azure Logic App which in turn will send a notification e-mail to a given e-mail address. The sample demonstrates the LAG functionality in particular, but also how to use reference data to enrich the stream. 
@@ -36,7 +36,7 @@ This repo demonstrates the ability to stream IoT sensor data from a Raspberry PI
 
 #### How to get started
 Please follow the following [guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/instructions/deploy-and-run-raspberrypi-stream.md)
-to setup and run Raspberry PI sensor streaming
+ to set up the infrastructure with Azure Resource Management Templates and start streaming IoT data from a Raspberry Pi
 
 ## Contribute
 See anything you want to improve? Do you want to build out the existing code base? Don't heistate to open a PR!
