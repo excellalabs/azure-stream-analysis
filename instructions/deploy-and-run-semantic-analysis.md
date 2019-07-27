@@ -17,7 +17,10 @@ Please ensure you have the following
 
 #### 2. Enter valid parameter values
 - Select to create a new resource group, or utilize an existing.
-- Enter the required template parameters such as Twitter handle and Power BI account
+- Enter the required template parameters:
+    - Twitter handle
+    - Power BI user name
+    - Power BI display name
 
 #### 3. Deploy
 Select to agree with terms and conditions and click "Purchase" to trigger the deployment.
