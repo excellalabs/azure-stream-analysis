@@ -2,7 +2,7 @@
 
 # Real Time Data Streaming of Raspberry PI and Twitter Data
 
-Setting up near-real time data pipelines in Azure, with Azure Stream Analytics allows one to quickly scale and perform advanced analytics on moving data. The following repository demonstrates how we easily utilize the following Azure components to easily spin up a data pipeline to stream data from multiple sources using serverless functionality in Azure.
+Setting up real time data pipelines in Azure, with Azure Stream Analytics allows one to quickly scale and perform advanced analytics on a moving data stream. The following repository demonstrates how we easily can utilize various Azure services to easily spin up a data pipeline to stream data from multiple sources using serverless functionality in Azure.
 
 ### Technologies utilized in this repo
 * Azure Logic Apps
