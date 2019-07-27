@@ -1,31 +1,11 @@
 -- Power BI output
 SELECT 
-   System.TimeStamp as OutTime,
-    AVG(CAST(ExcellaTwitterStream.SentimentScore AS FLOAT)) AS AverageSentimentScore,
-    MIN(CAST(ExcellaTwitterStream.SentimentScore AS FLOAT)) AS MinSentimentScore,
-    MAX(CAST(ExcellaTwitterStream.SentimentScore AS FLOAT)) AS MaxSentimentScore,
+    System.TimeStamp as OutTime,
+    AVG(SentimentScore) AS AverageSentimentScore,​
+    MIN(SentimentScore) AS MinSentimentScore,​
+    MAX(SentimentScore) AS MaxSentimentScore,
     COUNT(*) AS TweetsPerMinute
 INTO "excella-twitter-stream-power-bi-output"
 FROM ExcellaTwitterStream
 GROUP BY 
     HoppingWindow(Duration(minute, 1), Hop(second, 5))
-
--- Cosmos DB output
-SELECT *, System.TimeStamp as ReceivedTime
-INTO "raw-twitter-data-storage"
-FROM ExcellaTwitterStream
- 
--- Azure Function Query
-SELECT 
-   System.TimeStamp as OutTime,
-    ExcellaTwitterStream.SentimentScore,
-    ExcellaTwitterSTream.TweetText
-INTO "azure-function-output"
-FROM ExcellaTwitterStream
-WHERE ExcellaTwitterStream.SentimentScore <= 0.1
-
--- Anomaly detection
-SELECT ExcellaTwitterStream.Id, ExcellaTwitterStream.SentimentScore, ExcellaTwitterStream.TweetText
-INTO "azure-anomaly-output"
-FROM ExcellaTwitterStream 
-WHERE (GetRecordPropertyValue(ANOMALYDETECTION(val) OVER(LIMIT DURATION(minute, 1)), 'BiLevelChangeScore')) > 0.1
