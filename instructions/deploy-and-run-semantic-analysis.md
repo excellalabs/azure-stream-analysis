@@ -2,9 +2,10 @@
 To get started streaming data from a Twitter feed, please follow to steps below.
 
 ### Prerequisites
-- Twitter account
-- Power BI acccount
-- [Azure subscription](https://azure.microsoft.com/en-us/free/)
+Please ensure you have the following
+- [Twitter account](www.twitter.com)
+- [A free Azure subscription](https://azure.microsoft.com/en-us/free/)
+- [PowerBI](https://powerbi.microsoft.com/en-us/)
 
 ###  Deploy Azure Infrastructure
 
