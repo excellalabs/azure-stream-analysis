@@ -125,7 +125,7 @@
                 "dataLocale": "en-US",
                 "inputs": [
                     {
-                        "name": "raspberry-pi-eh",
+                        "name": "raspberrypieh",
                         "properties": {
                             "type": "Stream",
                             "datasource": {
