@@ -25,10 +25,10 @@ This repo demonstrates the ability to stream IoT sensor data from a Raspberry PI
 ## Solution Architecture
 
 ### Sentiment Analysis of a Twitter Feed
-![Solution Architecture](https://www.lucidchart.com/publicSegments/view/69aabaa9-865d-42e1-b175-96a9639cc2a9/image.png)
+![Solution Architecture](https://github.com/excellalabs/azure-stream-analysis/blob/master/instructions/img/Solution%20Architecture%20-%20Twitter.png)
 
 ### Streaming of Raspberry PI Data
-![Solution Architecture Streaming of Raspberry PI data](https://github.com/excellalabs/azure-stream-analysis/blob/master/Raspberry%20PI%20Stream.png)
+![Solution Architecture Streaming of Raspberry PI data](https://github.com/excellalabs/azure-stream-analysis/blob/master/instructions/img/Solution%20Architecture%20-%20Raspberry%20PI.png)
 
 ## How to get started
 
