@@ -4,7 +4,7 @@
 
 Setting up real time data pipelines in Azure, with Azure Stream Analytics allows one to quickly scale and perform advanced analytics on a moving data stream. The following repository demonstrates how we easily can utilize various Azure services to easily spin up a data pipeline to stream data from multiple sources using serverless functionality in Azure.
 
-### Technologies utilized in this repo
+### Technologies demonstrated
 * Azure Logic Apps
 * Azure Service Bus
 * Azure EventHub
@@ -13,6 +13,12 @@ Setting up real time data pipelines in Azure, with Azure Stream Analytics allows
 * Power BI
 * Raspberry PI
 * GrovePi
+
+## Resources
+Please refer to the following blog posts and talks for further information:
+- [Getting started with Azure Stream Analytics](https://www.excella.com/insights/getting-started-with-azure-stream-analytics)
+- [Near Real-Time Data Streaming with Azure Stream Analytics](https://www.excella.com/insights/near-real-time-data-streaming-with-azure-stream-analytics)
+- [Real-Time Data Streaming with Azure Stream Analytics](https://excellalabs.com/talks/real-time-data-streaming-azure-stream-analytics/)
 
 ## Features
 
