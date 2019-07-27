@@ -2,27 +2,25 @@
 
 # Real Time Data Streaming of Raspberry PI and Twitter Data
 
-Setting up near-real time data pipelines in Azure, with Azure Stream Analytics allows one to quickly scale and perform advanced analytics on moving data. The following repository demonstrates how we easily utilize the following Azure components to easily spin up a data pipeline to stream data from multiple sources
+Setting up near-real time data pipelines in Azure, with Azure Stream Analytics allows one to quickly scale and perform advanced analytics on moving data. The following repository demonstrates how we easily utilize the following Azure components to easily spin up a data pipeline to stream data from multiple sources using serverless functionality in Azure.
 
 ### Technologies utilized in this repo
-* Azure WebJob
+* Azure Logic Apps
+* Azure Service Bus
 * Azure EventHub
 * Azre Stream Analytics
-* Azure Functions
 * Azure DevOps
 * Power BI
 * Raspberry PI
-* Twitter Streaming API
 * GrovePi
-* Twilio
 
 ## Features
 
 ### Sentiment Analysis of a Twitter Feed
-This repo demonstrates the ability to stream Twitter data based on keywords or specific users utilizing Azure WebJobs, EventHub and Stream Analytics. The egressed and analysed data can be vizualized in a Power BI dashboard, or acted upon based on triggered Azure Functions that will send e-mail notifications through a Sendgrid API. The data is furthermore stored in a CosmosDB for later use.
+This repo demonstrates the ability to stream Twitter data based on keywords or specific users utilizing server-less functionality suchas Azure Logic Apps, EventHub and Stream Analytics. The egressed and analysed data can be vizualized in a Power BI dashboard. 
 
 ### Streaming of Raspberry PI Data
-This repo demonstrates the ability to stream sensor data from a Raspberry PI utilizing Azure EventHub and Stream Analytics. The sensor data can be viewed in a Power BI dashboard, but there is also built in functionality to demonstrate how easy it is to set up your on burglar alarm. Any motion detected by the Raspberry PI's sensors will trigger an Azure Function which will call the user using Twilio. The sample demonstrates the LAG functionality in particular, but also how to use reference data to enrich a stream. 
+This repo demonstrates the ability to stream IoT sensor data from a Raspberry PI to the cloud, utilizing an EventHub, a Stream Analytics jon, an Azure Service Bus and and an Azure Logic App. The sensor data can be viewed in a Power BI dashboard, but there is also built in functionality to demonstrate how easy it is to set up your own burglar alarm. Any motion detected by the Raspberry PI's sensors will put a message in a service bus queue that will be picked up by an Azure Logic App which in turn will send a notification e-mail to a given e-mail address. The sample demonstrates the LAG functionality in particular, but also how to use reference data to enrich the stream. 
 
 ## Solution Architecture
 
