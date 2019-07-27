@@ -1,22 +1,53 @@
 ## How to get started
 
-### Required items
-- Azure Subscription
+### Prerequisites
+- [Azure subscription](https://azure.microsoft.com/en-us/free/)
+- [PowerBI](https://powerbi.microsoft.com/en-us/)
 - Raspberry Pi
 - [GrovePi](https://www.dexterindustries.com/grovepi/)
+- [Outlook e-mail](www.outlook.com)
 
-### Azure
-Please refer to the [following guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/deploy-azure-infrastructure.md) to deploy the Azure Infrastructure.
+###  Deploy Azure Infrastructure
 
-#### Azure Functions
-Please refer to [following guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/deploy-azure-functions.md) to deploy the required function apps used in this sample.
+#### 1. Deploy Azure Resource Management Template
+- Navigate to [deploy an ARM template](https://portal.azure.com/#create/Microsoft.Template)
+- Click on "Build your own Template in the Editor"
+- Copy and paste the [Raspberry PI ARM Template](https://github.com/excellalabs/azure-stream-analysis/blob/master/deploy/azure-stream-analytics--raspberry-pi-template.json)
+- Click "Save"
 
-#### Azure Stream Analytics SQL
-Once the Azure Infrastructure has been deployed, open the Twitter Stream Analytics Job and paste in the Azure Stream Analytics query from [here](https://github.com/excellalabs/azure-stream-analysis/blob/master/src/azure-stream-analytics/raspberry-pi-streaming-job)
+#### 2. Enter valid parameter values
+- Select to create a new resource group, or utilize an existing.
+- Enter the required template parameters:
+    - Notification e-mail
+    - Power BI user name
+    - Power BI display name
 
+#### 3. Deploy
+Select to agree with terms and conditions and click "Purchase" to trigger the deployment.
+
+#### Authenticate accounts
+The ARM template will succesfully set up the required infrastructure but will require you to authenticate you Twitter and PowerBI accounts in to fully function.
+
+1. Authenticate Power BI output
+- Navigate to your Azure Stream Analytics Job
+- Click on the powerbi output
+- Click the blue button "Renew Authorization"
+- Log-in using your Power BI user account
+- Click "Save"
+- Navigate back to the Stream Analytics overview page
+- Click "Start" to start your streaming analyticsc job
+
+2. Authenticate Outlook notifier
+- Navigate to your Azure Logic App
+- Click on "Edit"
+- Click on the Outlook connection step (last step)
+- Click on the invalid connection symbol
+- Log-in using your outlook account
+- Navigate back to the Logic App overview page
+- Click "Enable" to enable your trigger
 
 #### Reference data 
-The sensor data stream from your Raspberry Pi will contain individual data points as well as the unique device id for your device. To be able to enrich your stream with additional information, e.g. a friendly device name, please navigate to your storage account and to the referencedata blob container. In this container, please copy in an updated version of the [reference_data.json](https://github.com/excellalabs/azure-stream-analysis/blob/master/src/azure-stream-analytics/reference_data.json)
+The sensor data stream from your Raspberry Pi will contain individual data points as well as the unique device id for your device. To be able to enrich your stream with additional information, e.g. a friendly device name, please navigate to your storage account and to the reference blob container. In this container, please copy in an updated version of the [reference_data.json](https://github.com/excellalabs/azure-stream-analysis/blob/master/src/azure-stream-analytics/reference_data.json)
 
 ```
    [ 
