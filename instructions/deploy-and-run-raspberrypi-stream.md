@@ -25,8 +25,12 @@
 #### 3. Deploy
 Select to agree with terms and conditions and click "Purchase" to trigger the deployment.
 
+
+**Note: The deployment will indicate failure but this is just because it was unable to authenticate the Power BI connection which you will later have to authorize**
+
+
 #### Authenticate accounts
-The ARM template will succesfully set up the required infrastructure but will require you to authenticate you Outlook and PowerBI accounts in to fully function.
+The ARM template will succesfully set up the required infrastructure but will require you to authenticate you Outlook and PowerBI accounts to fully function.
 
 1. Authenticate Power BI output
 - Navigate to your Azure Stream Analytics Job
