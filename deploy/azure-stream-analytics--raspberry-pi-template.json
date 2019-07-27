@@ -33,7 +33,6 @@
         "namespaces_motionalerts_name": "[concat('motionalerts-', uniqueString(resourceGroup().id))]",
         "namespaces_raspberrypi_eh_name": "[concat('raspberry-pi-eh-', uniqueString(resourceGroup().id))]",
         "workflows_motiondetected_notifier_name": "[concat('motion-detected-notifier-', uniqueString(resourceGroup().id))]",
-        "components_prediction_function_name": "[concat('prediction-function-', uniqueString(resourceGroup().id))]",
         "streamingjobs_raspberrypi_name": "[concat('raspberry-pi-stream-', uniqueString(resourceGroup().id))]",
         "eventhub_resourceKey": "[resourceId('Microsoft.EventHub/namespaces/AuthorizationRules', variables('namespaces_raspberrypi_eh_name'), 'RootManageSharedAccessKey')]",
         "serviceBus_resourceKey": "[resourceId('Microsoft.ServiceBus/namespaces/AuthorizationRules', variables('namespaces_motionalerts_name'), 'RootManageSharedAccessKey')]"
