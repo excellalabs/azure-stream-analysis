@@ -4,13 +4,12 @@ To get started streaming data from a Twitter feed, please follow to steps below.
 ### Prerequisites
 Please ensure you have the following
 - [Twitter account](www.twitter.com)
-- [A free Azure subscription](https://azure.microsoft.com/en-us/free/)
+- [Azure subscription](https://azure.microsoft.com/en-us/free/)
 - [PowerBI](https://powerbi.microsoft.com/en-us/)
 
 ###  Deploy Azure Infrastructure
 
 #### 1. Deploy Azure Resource Management Template
-
 - Navigate to [deploy an ARM template](https://portal.azure.com/#create/Microsoft.Template)
 - Click on "Build your own Template in the Editor"
 - Copy and paste the [Raspberry PI ARM Template](https://github.com/excellalabs/azure-stream-analysis/blob/master/deploy/azure-stream-analytics--twitter-template.json)
@@ -27,6 +26,7 @@ Select to agree with terms and conditions and click "Purchase" to trigger the de
 The ARM template will succesfully set up the required infrastructure but will require you to authenticate you Twitter and PowerBI accounts in to fully function.
 
 1. Authenticate Power BI output
+- Navigate to your 
 2. Authenticate Twitter listener
 
 ### Power BI
