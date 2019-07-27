@@ -66,7 +66,7 @@ $ pip install azure
 4. Connect the light sensor to analog port A1
 5. Connect the ultra-sonic range sensor to  digital port D4
 
-![Raspberry PI](https://github.com/excellalabs/azure-stream-analysis/blob/master/raspberry-pi-setup.jpg)
+![Raspberry PI](https://github.com/excellalabs/azure-stream-analysis/blob/master/instructions/img/raspberry-pi-setup.jpg)
 
 #### Sends sensor data to Azure
 Download [stream_raspberrypi_sensors.py](https://github.com/excellalabs/azure-stream-analysis/blob/master/src/raspberry-pi/stream_raspberrypi_sensors_to_azure.py)
