@@ -13,10 +13,11 @@ Setting up real time data pipelines in Azure, with Azure Stream Analytics allows
 * GrovePi
 
 ## Resources
-Please refer to the following blog posts and talks for further information:
+Please refer to the following blog posts, presentations and recorded talks for further information:
 - [Getting started with Azure Stream Analytics](https://www.excella.com/insights/getting-started-with-azure-stream-analytics)
 - [Near Real-Time Data Streaming with Azure Stream Analytics](https://www.excella.com/insights/near-real-time-data-streaming-with-azure-stream-analytics)
 - [Real-Time Data Streaming with Azure Stream Analytics](https://excellalabs.com/talks/real-time-data-streaming-azure-stream-analytics/)
+- [PowerPoint presentation](https://github.com/excellalabs/azure-stream-analysis/blob/master/presentation/Real-Time%20data%20Streaming%20with%20Azure%20Stream%20Analytics.pptx)
 
 ## Features
 
