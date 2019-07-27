@@ -4,7 +4,7 @@
 
 Setting up real time data pipelines in Azure, with Azure Stream Analytics allows one to quickly scale and perform advanced analytics on a moving data stream. The following repository demonstrates how we easily can utilize various Azure services to easily spin up a data pipeline to stream data from multiple sources using serverless functionality in Azure.
 
-### Technologies utilized in this repo
+### Technologies demonstrated
 * Azure Logic Apps
 * Azure Service Bus
 * Azure EventHub
@@ -13,6 +13,12 @@ Setting up real time data pipelines in Azure, with Azure Stream Analytics allows
 * Power BI
 * Raspberry PI
 * GrovePi
+
+## Resources
+Please refer to the following blog posts and talks for further information:
+- [Getting started with Azure Stream Analytics](https://www.excella.com/insights/getting-started-with-azure-stream-analytics)
+- [Near Real-Time Data Streaming with Azure Stream Analytics](https://www.excella.com/insights/near-real-time-data-streaming-with-azure-stream-analytics)
+- [Real-Time Data Streaming with Azure Stream Analytics](https://excellalabs.com/talks/real-time-data-streaming-azure-stream-analytics/)
 
 ## Features
 
@@ -25,12 +31,6 @@ This repo demonstrates the ability to stream Twitter data based on keywords or s
 This repo demonstrates the ability to stream IoT sensor data from a Raspberry PI to the cloud, utilizing an EventHub, a Stream Analytics jon, an Azure Service Bus and and an Azure Logic App. The sensor data can be viewed in a Power BI dashboard, but there is also built in functionality to demonstrate how easy it is to set up your own burglar alarm. Any motion detected by the Raspberry PI's sensors will put a message in a service bus queue that will be picked up by an Azure Logic App which in turn will send a notification e-mail to a given e-mail address. The sample demonstrates the LAG functionality in particular, but also how to use reference data to enrich the stream. 
 
 ![Solution Architecture Streaming of Raspberry PI data](https://github.com/excellalabs/azure-stream-analysis/blob/master/instructions/img/Solution%20Architecture%20-%20Raspberry%20PI.png)
-
-## Resources
-Please refer to the following blog posts and talks for further information:
-- [Getting started with Azure Stream Analytics](https://www.excella.com/insights/getting-started-with-azure-stream-analytics)
-- [Near Real-Time Data Streaming with Azure Stream Analytics](https://www.excella.com/insights/near-real-time-data-streaming-with-azure-stream-analytics)
-- [Real-Time Data Streaming with Azure Stream Analytics](https://excellalabs.com/talks/real-time-data-streaming-azure-stream-analytics/)
 
 ## How to get started
 
