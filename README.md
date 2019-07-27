@@ -1,5 +1,3 @@
-[![Build Status](https://dev.azure.com/excellaco/azure-stream-analysis-pipelines/_apis/build/status/excellalabs.azure-stream-analysis)](https://dev.azure.com/excellaco/azure-stream-analysis-pipelines/_build/latest?definitionId=2)
-
 # Real Time Data Streaming of Raspberry PI and Twitter Data
 
 Setting up real time data pipelines in Azure, with Azure Stream Analytics allows one to quickly scale and perform advanced analytics on a moving data stream. The following repository demonstrates how we easily can utilize various Azure services to easily spin up a data pipeline to stream data from multiple sources using serverless functionality in Azure.
