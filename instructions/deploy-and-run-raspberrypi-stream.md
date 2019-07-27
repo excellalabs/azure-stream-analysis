@@ -26,7 +26,7 @@
 Select to agree with terms and conditions and click "Purchase" to trigger the deployment.
 
 #### Authenticate accounts
-The ARM template will succesfully set up the required infrastructure but will require you to authenticate you Twitter and PowerBI accounts in to fully function.
+The ARM template will succesfully set up the required infrastructure but will require you to authenticate you Outlook and PowerBI accounts in to fully function.
 
 1. Authenticate Power BI output
 - Navigate to your Azure Stream Analytics Job
@@ -47,7 +47,7 @@ The ARM template will succesfully set up the required infrastructure but will re
 - Click "Enable" to enable your trigger
 
 #### Reference data 
-The sensor data stream from your Raspberry Pi will contain individual data points as well as the unique device id for your device. To be able to enrich your stream with additional information, e.g. a friendly device name, please navigate to your storage account and to the reference blob container. In this container, please copy in an updated version of the [reference_data.json](https://github.com/excellalabs/azure-stream-analysis/blob/master/src/azure-stream-analytics/reference_data.json)
+The sensor data stream from your Raspberry Pi will contain individual data points as well as the unique device id for your device. To be able to enrich your stream with additional information, e.g. a friendly device name, please navigate to your storage account and to the reference blob container. In this container, please copy in an updated version of the [reference-data.json](https://github.com/excellalabs/azure-stream-analysis/blob/master/src/azure-stream-analytics/reference-data.json)
 
 ```
    [ 
