@@ -266,7 +266,7 @@
                                     }
                                 },
                                 "method": "post",
-                                "path": "/@{encodeURIComponent('excella-twitter-eh')}/events"
+                                "path": "/@{encodeURIComponent('twitter-eh')}/events"
                             }
                         }
                     },
