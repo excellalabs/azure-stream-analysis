@@ -29,10 +29,10 @@ This repo demonstrates the ability to stream IoT sensor data from a Raspberry PI
 ## How to get started
 
 ### Sentiment Analysis of a Twitter Feed
-Please follow the following [guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/deploy-and-run-semantic-analysis.md) to setup and run semantic analysis
+Please follow the following [guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/instructions/deploy-and-run-semantic-analysis.md) to setup and run semantic analysis
 
 ### Streaming of Raspberry PI Data
-Please follow the following [guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/deploy-and-run-raspberrypi-stream.md)
+Please follow the following [guide](https://github.com/excellalabs/azure-stream-analysis/blob/master/instructions/deploy-and-run-raspberrypi-stream.md)
 to setup and run Raspberry PI sensor streaming
 
 ## Contribute
