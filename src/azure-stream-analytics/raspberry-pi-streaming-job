@@ -1,19 +1,20 @@
-/* ************ Raspberry PI **************** */
-
 -- Power BI
 SELECT   
     event.DeviceId,
     System.TimeStamp AS EventTime,  
-    event.SensorReadings.*,
+    event.SensorReadings.Temperature,
+    event.SensorReadings.Distance,
+    event.SensorReadings.Humidity,
+    event.SensorReadings.LightLevel,
+    event.SensorReadings.SoundLevel,
     ref.deviceName
 INTO "raspberry-pi-power-bi-output"
-FROM "raspberry-pi-eh-input" as event  
-JOIN "raspberrypi-reference-data-input" ref ON ref.devideId = event.DeviceId
+FROM "raspberry-pi-eh-input" as event
+JOIN "raspberrypi-reference-data-input" ref ON ref.deviceId = event.DeviceId
 
--- Azure Function output
+-- Service-Bus Motion Detection
 SELECT   
-   System.TimeStamp as OutTime,
-    event.SensorReadings.Distance
-INTO "raspberry-pi-motion-function-output"
+   System.TimeStamp as OutTime, event.SensorReadings.Distance
+INTO servicebusOutput
 FROM "raspberry-pi-eh-input" as event  
-WHERE event.SensorReadings.Distance < LAG(event.SensorReadings.Distance) OVER (PARTITION BY event.DeviceId LIMIT DURATION(second, 10))
+WHERE event.SensorReadings.Distance < LAG(event.SensorReadings.Distance) OVER (PARTITION BY event.DeviceId LIMIT DURATION(second, 10)) 
