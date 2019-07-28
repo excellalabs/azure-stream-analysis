@@ -12,6 +12,14 @@ Setting up real time data pipelines in Azure, with Azure Stream Analytics allows
 * Raspberry Pi
 * GrovePi
 
+### Potential use-cases
+This technology setup could be useful for:
+- Streaming social media and RSS feeds to determine sentiment and overall success of a newly released feature or product
+- Streaming data from live traffic cameras to determine current conditions and measure improvements of traffic flow after road-work
+- Streaming data from live traffic cameras to determine potential benefits/losses of introducing or removing toll roads
+- Streaming financial transactions to determine fraudulant activities
+- Streaming IoT sensors of various kinds in the field to determine and predict air quality in different cities across the world
+
 ## Resources
 Please refer to the following blog posts, presentations and recorded talks for further information:
 - [Getting started with Azure Stream Analytics](https://www.excella.com/insights/getting-started-with-azure-stream-analytics)
