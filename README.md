@@ -13,9 +13,9 @@ Setting up real time data pipelines in Azure, with Azure Stream Analytics allows
 * GrovePi
 
 ### Potential use-cases
-This technology setup could be useful to stream the following data sources:
+There are endless potential use-cases in which this tech-stack can be proven useful. To mention a few, we could potentially stream:
 - Social media and RSS feeds to determine sentiment and overall success of a newly released feature or product
-- Data from live traffic cameras to determine current conditions and measure improvements of traffic flow after road-work
+- Data from live traffic cameras to determine current conditions and measure improvements after road-work
 - Data from live traffic cameras to determine potential benefits/losses of introducing or removing toll roads
 - Financial transactions to determine fraudulant activities
 - IoT sensors of various kinds in the field to determine and predict air quality in different cities across the world
