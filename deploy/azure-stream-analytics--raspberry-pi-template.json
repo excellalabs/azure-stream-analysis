@@ -177,7 +177,7 @@
                 ],
                 "outputs": [
                     {
-                        "name": "motion-detection",
+                        "name": "servicebusOutput",
                         "properties": {
                             "datasource": {
                                 "type": "Microsoft.ServiceBus/Queue",
