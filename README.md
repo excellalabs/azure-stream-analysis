@@ -48,6 +48,6 @@ Please follow the following [guide](https://github.com/excellalabs/azure-stream-
 
 ## Contribute
 See anything you want to improve? Do you want to build out the existing code base? Don't heistate to open a PR!
-Please read our [contributing guidelines] (https://github.com/excellalabs/azure-stream-analysis/blob/master/contributing.md)
+Please read our [contributing guidelines](https://github.com/excellalabs/azure-stream-analysis/blob/master/contributing.md)
 
 
